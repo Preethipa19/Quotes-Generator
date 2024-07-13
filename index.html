@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUOTE GENERATOR!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Quote of the day!!</h1>
+    <button onclick="color()">Quotes generate</button>
+    <div id="root"></div>
+
+    <script>
+      function color() {
+        var a = Math.floor(Math.random() * 255);
+        var b = Math.floor(Math.random() * 255);
+        var c = Math.floor(Math.random() * 255);
+        d = `rgb(${a},${b},${c})`;
+        document.body.style.backgroundColor = d;
+
+        const q = [
+          "The only way to do great work is to love what you do Steve Jobs",
+          "It does not matter how slowly you go as long as you do not stop  Confucius",
+          "In the end it's not the years in your life that count. It's the life in your years. Abraham Lincon",
+
+          "The greatest leader is not necessarily the one who does the greatest things. He is the one that gets the people to do the greatest things. Ronald Reagan",
+
+          "Courage is not the absence of fear, but the triumph over it. Nelson Mandela",
+
+          "Success is not final, failure is not fatal: It is the courage to continue that counts.Winston Churchill",
+
+          "Happiness is not something ready made. It comes from your own actions. Dalai Lama",
+
+          "Be the change that you wish to see  the world.Mahatma Gandhi",
+
+          "An investment in knowledge pays the best interest. Benjamin Franklin",
+
+          "Love is not only something you feel, it is something you do.David Wilkerson",
+        ];
+
+        const index = Math.floor(Math.random() * q.length);
+        document.getElementById("root").textContent = q[index];
+      }
+    </script>
+  </body>
+</html>
