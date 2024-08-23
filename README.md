@@ -1,5 +1,4 @@
-# Quotes-Generator
-# Quote Generator
+# Quotes-Generator!!
 
 A simple and stylish web application that displays a random quote with a dynamic background color change.
 
